@@ -1,0 +1,10 @@
+EveryLoginMessage: Welcome back to [SERVER]!
+FirstLoginMessage: Welcome to [SERVER]!
+FirstLoginItems:
+  -STONE_SWORD,1
+  -STONE_PICKAXE,1
+  -STONE_SHOVEL,1
+  -STONE_AXE,1
+  -COOKED_BEEF,32
+  -TORCH,32
+

@@ -1,0 +1,4 @@
+name: LoginManager
+version: '1.0'
+main: hardbuckaroo.loginmanager.LoginManager
+api-version: '1.20'
