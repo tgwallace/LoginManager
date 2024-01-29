@@ -17,7 +17,7 @@ public class Listeners implements Listener {
     public void onLogin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
 
-        if(!player.hasPlayedBefore()) {
+        if(!plugin.getConfig().contains(player.getUniqueId().toString())) {
             String firstMessage = plugin.getConfig().getString("FirstLoginMessage");
             if(firstMessage != null && !firstMessage.isEmpty()) player.sendRawMessage(firstMessage);
             if(plugin.getConfig().contains("FirstLoginItems")) {
@@ -27,6 +27,7 @@ public class Listeners implements Listener {
                     player.getInventory().addItem(itemStack);
                 }
             }
+            plugin.getConfig().set(player.getUniqueId().toString(),player.getName());
         } else {
             String message = plugin.getConfig().getString("EveryLoginMessage");
             if(message != null && !message.isEmpty()) player.sendRawMessage(message);
