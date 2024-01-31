@@ -1,5 +1,8 @@
-EveryLoginMessage: Welcome back to [SERVER]!
-FirstLoginMessage: Welcome to [SERVER]!
+EveryLoginMessage:
+  - Welcome back to [SERVER]!
+FirstLoginMessage:
+  - Welcome to [SERVER]!
+  - Read the rules using /rules!
 FirstLoginItems:
   - STONE_SWORD,1
   - STONE_PICKAXE,1
